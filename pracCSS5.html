@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>   
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Subir Información del videojuego</h1>
+    <form action="datos.html">
+
+        <label for="nombre">Nombre del Videojuego</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="especie">Categoria</label>
+        <select id="especie" name="especie">
+            <option value="pokemon">Accion</option>
+            <option value="kirbi">Mundo abierto</option>
+        </select><br><br>
+
+        <input type="checkbox" id="Disponible" name="Disponible">
+        <label for="Disponible">Esta Disponible</label><br><br>
+
+        <label>Ambiente</label>
+        <br>
+        <input type="radio" id="Divertido" name="Ambiente" value="Divertido">
+        <label for="Divertido">Divertido</label>
+        <input type="radio" id="Aburrido" name="Ambiente" value="Aburrido">
+        <label for="aburrido">Aburrido</label><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

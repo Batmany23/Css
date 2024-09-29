@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid mediumspringgreen;
+            background-color: aqua;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: darkblue;
+            color: rgb(174, 255, 0);
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro Celulares</h1>
+    <form>
+        <label for="nombre">Nombre del Telefono:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="tipo">Tipo de Telefono:</label>
+        <select id="tipo" name="tipo">
+            <option value="perro"> Samsung </option>
+            <option value="gato"> Motorola </option>
+        </select>
+
+        <label for="vacunado">¿Funciona?</label>
+        <input type="checkbox" id="vacunado" name="vacunado"> 
+
+        <label>Necesita Reparacion</label>
+        <input type="radio" id="macho" name="genero" value="macho"> SI
+        <input type="radio" id="hembra" name="genero" value="hembra"> NO
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
